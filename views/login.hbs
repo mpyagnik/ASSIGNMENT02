@@ -1,0 +1,92 @@
+{{!-- <h3><i class="fas fa-book-reader"></i> StoryBooks</h3>
+<div class="section">
+    <p class="lead">Create public and private stories from your life</p>
+</div>
+<div class="divider"></div>
+<div class="section">
+    <a href="/auth/google" class="btn btn-danger darken-1">
+        <i class="fab fa-google left"></i>Log in with Google 
+    </a>
+
+    <a href="/auth/github" class="btn btn-dark">
+        <i class="fab fa-github left"></i> Log in with GitHub
+    </a>
+</div> --}}
+
+{{!-- <h3><i class="fas fa-book-reader"></i> Life's Canvas</h3>
+<div class="section">
+    <p class="lead">Create public and private stories from your life</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+    <!-- OAuth Login Options -->
+    <a href="/auth/google" class="btn btn-danger darken-1">
+        <i class="fab fa-google left"></i> Log in with Google 
+    </a>
+
+    <a href="/auth/github" class="btn btn-dark">
+        <i class="fab fa-github left"></i> Log in with GitHub
+    </a>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+    <!-- Email and Password Login Form -->
+    <form action="/login" method="POST">
+        <div class="input-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-field">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+    </form>
+</div> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center align-items-center" style="height:100vh">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center"><i class="fas fa-book-reader"></i>Life's Canvas</h3>
+                        <form action="/users/login" method="POST">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="/auth/google" class="btn btn-danger">Log in with Google</a>
+                    <a href="/auth/github" class="btn btn-secondary">Log in with GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+

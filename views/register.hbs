@@ -1,0 +1,35 @@
+<h3>Register</h3>
+<div class="section">
+    <form action="/users/register" method="POST">
+        <div class="input-field">
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="firstName">First Name</label>
+        </div>
+        <div class="input-field">
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="lastName">Last Name</label>
+        </div>
+        <div class="input-field">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Email Address</label>
+        </div>
+        <div class="input-field">
+            <input type="password" id="password" name="password" required>
+            <label for="password">Password</label>
+        </div>
+        <div class="input-field">
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <label for="confirmPassword">Confirm Password</label>
+        </div>
+        <button type="submit" class="btn">Register</button>
+    </form>
+</div>
+<div class="divider"></div>
+<div class="section">
+    <a href="/auth/google" class="btn btn-danger darken-1">
+        <i class="fab fa-google left"></i>Continue with Google
+    </a>
+    <a href="/auth/github" class="btn btn-dark">
+        <i class="fab fa-github left"></i>Continue with GitHub
+    </a>
+</div>
